@@ -24,7 +24,7 @@ if (isset($_POST['login']) &&  isset($_POST['password'])) {
    Si utilisateur/trice est non identifié(e), on affiche le formulaire
 -->
 <?php if(!isset($loggedUser)): ?>
-<form action="home.php" method="post">
+<form action="Home.php" method="post">
     <!-- si message d'erreur on l'affiche -->
     <?php if(isset($errorMessage)) : ?>
         <div class="alert alert-danger" role="alert">
