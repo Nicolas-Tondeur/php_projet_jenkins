@@ -1,7 +1,24 @@
 <?php
 
+    // Options de connexion.
+    $hotebdd = "10.20.0.4";
+    $nombdd = "bddapp";
+    $utilbdd = "Pablo";
+    $mdpbdd = "root";
+ 
+// Connexion.
+try {
+ 
+    $bdd = new PDO("mysql:host=$hotebdd;dbname=$nombdd;charset=utf8", $utilbdd, $mdpbdd);
+ 
+} catch (Exception $e) {
+ 
+    die("Erreur: ".$e->getMessage());
+ 
+}
+
 // Validation du formulaire
-if (isset($_POST['login']) &&  isset($_POST['password'])) {
+if (isset($_POST['login']) && isset($_POST['password'])) {
     foreach ($users as $user) {
         if (
             $user['login'] === $_POST['login'] &&
