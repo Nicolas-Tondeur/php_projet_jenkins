@@ -1,4 +1,4 @@
-<?php include 'Login.php' ?>
+<?php include_once('Login.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
