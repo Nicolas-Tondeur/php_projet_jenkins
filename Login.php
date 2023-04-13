@@ -4,7 +4,7 @@
     $hotebdd = "10.20.0.4";
     $nombdd = "bddapp";
     $utilbdd = "root";
-    $mdpbdd = "";
+    $mdpbdd = "azerty";
  
 // Connexion.
 try {
