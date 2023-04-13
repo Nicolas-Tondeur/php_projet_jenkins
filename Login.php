@@ -33,8 +33,8 @@ if (isset($_POST['login']) &&  isset($_POST['password'])) {
     <?php endif; ?>
     <div class="mb-3">
         <label for="login" class="form-label">login</label>
-        <input type="login" class="form-control" id="login" name="login" aria-describedby="login-help" placeholder="you@exemple.com">
-        <div id="login-help" class="form-text">L'login utilisé lors de la création de compte.</div>
+        <input type="login" class="form-control" id="login" name="login" aria-describedby="login-help" placeholder="toto">
+        <div id="login-help" class="form-text">Login utilisé lors de la création de compte.</div>
     </div>
     <div class="mb-3">
         <label for="password" class="form-label">Mot de passe</label>
