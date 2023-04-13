@@ -3,8 +3,8 @@
     // Options de connexion.
     $hotebdd = "10.20.0.4";
     $nombdd = "bddapp";
-    $utilbdd = "Pablo";
-    $mdpbdd = "root";
+    $utilbdd = "root";
+    $mdpbdd = "";
  
 // Connexion.
 try {
