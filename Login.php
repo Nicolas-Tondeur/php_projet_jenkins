@@ -1,18 +1,18 @@
 <?php
 
 // Validation du formulaire
-if (isset($_POST['email']) &&  isset($_POST['password'])) {
+if (isset($_POST['login']) &&  isset($_POST['password'])) {
     foreach ($users as $user) {
         if (
-            $user['email'] === $_POST['email'] &&
+            $user['login'] === $_POST['login'] &&
             $user['password'] === $_POST['password']
         ) {
             $loggedUser = [
-                'email' => $user['email'],
+                'login' => $user['login'],
             ];
         } else {
             $errorMessage = sprintf('Les informations envoyées ne permettent pas de vous identifier : (%s/%s)',
-                $_POST['email'],
+                $_POST['login'],
                 $_POST['password']
             );
         }
@@ -32,9 +32,9 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
         </div>
     <?php endif; ?>
     <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" aria-describedby="email-help" placeholder="you@exemple.com">
-        <div id="email-help" class="form-text">L'email utilisé lors de la création de compte.</div>
+        <label for="login" class="form-label">login</label>
+        <input type="login" class="form-control" id="login" name="login" aria-describedby="login-help" placeholder="you@exemple.com">
+        <div id="login-help" class="form-text">L'login utilisé lors de la création de compte.</div>
     </div>
     <div class="mb-3">
         <label for="password" class="form-label">Mot de passe</label>
@@ -47,6 +47,6 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 -->
 <?php else: ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
+        Bonjour <?php echo $loggedUser['login']; ?> et bienvenue sur le site !
     </div>
 <?php endif; ?>
