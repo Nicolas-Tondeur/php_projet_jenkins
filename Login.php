@@ -1,7 +1,7 @@
 <?php
 
     // Options de connexion.
-    $hotebdd = "10.20.0.4";
+    $hotebdd = "10.20.0.7";
     $nombdd = "bddapp";
     $utilbdd = "root";
     $mdpbdd = "azerty";
