@@ -1,4 +1,3 @@
-<?php include_once('Login.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +17,8 @@
     <?php include_once('header.php'); ?>
 
     <!-- Inclusion du formulaire de connexion -->
-    <?php include_once('login.php'); ?>
-        <h1>Bonjour <?php echo $loggedUser['login']; ?></h1>
+    <?php include_once('Login.php'); ?>
+        <h1>Bonjour <?php echo $loggedUser; ?></h1>
 
         <!-- Si l'utilisateur existe, on affiche les recettes -->
         <?php if(isset($loggedUser)): ?>
