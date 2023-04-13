@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProfDeMath </title>
+    <title>ProfDeMath</title>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
         rel="stylesheet"
@@ -18,7 +18,7 @@
 
     <!-- Inclusion du formulaire de connexion -->
     <?php include_once('Login.php'); ?>
-        <h1>Bonjour <?php echo $loggedUser; ?></h1>
+        <h1>Bonjour <?php $loggedUser; ?></h1>
 
         <!-- Si l'utilisateur existe, on affiche les recettes -->
         <?php if(isset($loggedUser)): ?>
