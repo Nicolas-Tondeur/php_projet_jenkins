@@ -26,7 +26,7 @@ if(isset($_POST['login']) && isset($_POST['password']))
  if($login !== "" && $password !== "")
  {
  $requete = "SELECT count(*) FROM utilisateur where 
- nom_utilisateur = '".$login."' and mot_de_passe = '".$password."' ";
+ nom_utilisateur = '".$login."' and mot_de_passe = '".md5($password)."' ";
  $exec_requete = mysqli_query($db,$requete);
  $reponse = mysqli_fetch_array($exec_requete);
  $count = $reponse['count(*)'];
