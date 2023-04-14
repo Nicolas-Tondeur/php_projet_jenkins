@@ -21,7 +21,7 @@ if(isset($_POST['login']) && isset($_POST['password']))
  // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
  // pour éliminer toute attaque de type injection SQL et XSS
  $login = mysqli_real_escape_string($db,htmlspecialchars($_POST['login'])); 
- $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['password']));
+ $password = md5(mysqli_real_escape_string($db,htmlspecialchars($_POST['password'])));
  
  if($login !== "" && $password !== "")
  {
