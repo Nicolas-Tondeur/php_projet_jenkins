@@ -10,7 +10,7 @@
  if($_SESSION['login'] !== ""){
  $user = $_SESSION['login'];
  // afficher un message
- echo "Bonjour $user, vous êtes connecté";
+ echo "Bonjour monsieur $user, vous êtes connecté";
  }
  ?>
  
