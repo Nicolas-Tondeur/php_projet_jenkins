@@ -14,14 +14,14 @@ if(isset($_POST['login']) && isset($_POST['password']))
  $nombdd = "bddapp";
  $utilbdd = "root";
  $mdpbdd = "azerty";
- $db = mysqli_connect($hotebdd, $utilbdd, $mdpbdd,$bddapp)
+ $db = mysqli_connect($hotebdd, $utilbdd, $mdpbdd, $nombdd)
  or die('could not connect to database');
 
  
  // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
  // pour éliminer toute attaque de type injection SQL et XSS
  $login = mysqli_real_escape_string($db,htmlspecialchars($_POST['login'])); 
- $password = md5(mysqli_real_escape_string($db,htmlspecialchars($_POST['password'])));
+ $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['password']));
  
  if($login !== "" && $password !== "")
  {
