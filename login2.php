@@ -13,7 +13,7 @@
     <body class="d-flex flex-column min-vh-100">
         <div class="container">
 
-        <form action="verification.php" method="POST">
+        <form action="check.php" method="POST">
         <h1>Connexion</h1>
             <label><b>Login</b></label>
             <input type="text" class="form-label" placeholder="Entrer le nom d'utilisateur" name="login" required>
@@ -31,8 +31,6 @@
                 }
                 ?>
         </form>
-            <h1>Bonjour <?php $loggedUser; ?></h1>
-
         </div>
     </body>
 </html>

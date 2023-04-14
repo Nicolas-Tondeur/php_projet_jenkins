@@ -37,12 +37,12 @@ if(isset($_POST['login']) && isset($_POST['password']))
  }
  else
  {
- header('Location: login.php?erreur=1'); // utilisateur ou mot de passe incorrect
+ header('Location: login2.php?erreur=1'); // utilisateur ou mot de passe incorrect
  }
  }
  else
  {
- header('Location: login.php?erreur=2'); // utilisateur ou mot de passe vide
+ header('Location: login2.php?erreur=2'); // utilisateur ou mot de passe vide
  }
 }
 else
