@@ -25,7 +25,7 @@ if(isset($_POST['login']) && isset($_POST['password']))
  
  if($login !== "" && $password !== "")
  {
- $requete = "SELECT count(*) FROM utilisateur where 
+ $requete = "SELECT count(*) FROM users where 
  login = '".$login."' and password = '".md5($password)."' ";
  $exec_requete = mysqli_query($db,$requete);
  $reponse = mysqli_fetch_array($exec_requete);

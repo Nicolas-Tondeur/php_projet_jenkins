@@ -2,7 +2,7 @@
  <head>
  <meta charset="utf-8">
  </head>
- <body style='background:#fff;'>
+ <body>
  <div id="content">
  <!-- tester si l'utilisateur est connecté -->
  <?php
