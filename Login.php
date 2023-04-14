@@ -5,6 +5,7 @@
     $nombdd = "bddapp";
     $utilbdd = "root";
     $mdpbdd = "azerty";
+
  
 // Connexion.
 try {
